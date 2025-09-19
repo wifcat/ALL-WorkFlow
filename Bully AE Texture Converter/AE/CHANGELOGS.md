@@ -5,6 +5,7 @@
 > -Converted files won't be converted again
 > -Fixed the issue where Png to Dds conversion does not support alpha 							  mode 
 > -The png to Dds will no longer make a duplicate files
+> -CLI Update for a new Settings feature which allows you to customise the output files
 
 > **Version 2.0**
 > -
