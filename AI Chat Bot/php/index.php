@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 // Load API key
 $apiKey = ""; // Paste inside the quote 
 
-// Ambil input JSON
+// take response from JSON
 $data = json_decode(file_get_contents("php://input"), true);
 $userMessage = trim($data["message"] ?? "");
 
@@ -59,4 +59,5 @@ if ($httpCode !== 200 || !isset($responseData["choices"][0]["message"]["content"
 
 // fetch AI Response
 $reply = $responseData["choices"][0]["message"]["content"];
+
 echo json_encode(["reply" => $reply]);
