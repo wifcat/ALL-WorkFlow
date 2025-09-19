@@ -1,0 +1,4427 @@
+Bank G_John
+{
+	ConditionGroup
+	{
+	}
+	Bank Default_KEY
+	{
+		ConditionGroup
+		{
+		}
+		Node RisingAttacks
+		{
+			ConditionGroup
+			{
+				ActionNodeRequest
+				{
+					param00001	0x00000000
+				}
+			}
+			Tracks
+			{
+				Execute
+				{
+					param00008	false
+					param00012	0x00000000
+					param00016	-1.000000
+					param00032	"./HeavyAttacks"
+				}
+			}
+			Bank HeavyAttacks
+			{
+				ConditionGroup
+				{
+				}
+				Node RisingAttacks
+				{
+					ConditionGroup
+					{
+						ConditionGroup
+						{
+						}
+					}
+					Tracks
+					{
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	13
+						}
+						Animation
+						{
+							param00008	true
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	h"G_JOHNNY\RISING_ATTCK"
+							param00032	0
+							param00036	0
+							param00040	0x00000000
+							param00044	-1.000000
+							param00048	1.000000
+							param00052	0.100000
+							param00056	-1.000000
+							param00060	false
+							param00061	false
+						}
+						Collision
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0.233333
+							param00028	0.400000
+							param00032	"PunchHeavy02"
+							param00036	1
+							param00040	"HitImpactLarge"
+							param00044	"HEADUPPERCUT"
+							param00048	0.000000
+							param00052	15.000000
+							param00056	0.000000
+							param00060	0x0000C03F
+							param00064	0.000000
+							param00068	0.000000
+							param00072	0x00000000
+							param00076	0x00000000
+							param00080	20.000000
+							param00084	0x00000000
+							param00088	false
+							param00089	true
+							param00092	0.500000
+							param00528	8
+							param00532	true
+							param00533	false
+							param00534	false
+							param00535	false
+							param00536	false
+							param00537	false
+						}
+						Collision
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0.416667
+							param00028	0.616667
+							param00032	"PunchHeavy02"
+							param00036	1
+							param00040	"HitImpactLarge"
+							param00044	"HEADUPPERCUT"
+							param00048	0.000000
+							param00052	15.000000
+							param00056	0.000000
+							param00060	0x0000C03F
+							param00064	0.000000
+							param00068	0.000000
+							param00072	0x00000000
+							param00076	0x00000000
+							param00080	20.000000
+							param00084	0x00000000
+							param00088	false
+							param00089	true
+							param00092	0.500000
+							param00528	5
+							param00532	true
+							param00533	false
+							param00534	false
+							param00535	false
+							param00536	false
+							param00537	false
+						}
+					}
+				}
+			}
+		}
+		FileReference
+		{
+			fileName	"Locomotion.act"
+			path	"Z:\Bully\Bin\Bully_PC\Act\Anim\"
+			includeFile	false
+		}
+		Node IDLE
+		{
+			ConditionGroup
+			{
+			}
+			Tracks
+			{
+				Animation
+				{
+					param00008	false
+					param00012	0x00000000
+					param00016	-1.000000
+					param00024	h"F_GREAS\IDLE"
+					param00032	2
+					param00036	0
+					param00040	0x00000000
+					param00044	0.000000
+					param00048	1.000000
+					param00052	-1.000000
+					param00056	-1.000000
+					param00060	false
+					param00061	false
+				}
+			}
+		}
+		Bank ExecuteNodes
+		{
+			ConditionGroup
+			{
+			}
+			FileReference
+			{
+				fileName	"Strafe_Greaser.act"
+				path	"Z:\Bully\Bin\Bully_PC\Act\Anim\"
+				includeFile	false
+			}
+			FileReference
+			{
+				fileName	"Walk_Greasers.act"
+				path	"Z:\Bully\Bin\Bully_PC\Act\Anim\"
+				includeFile	false
+			}
+			Bank CustomActionOps
+			{
+				ConditionGroup
+				{
+				}
+				Node CustomActionOps
+				{
+					ConditionGroup
+					{
+					}
+					Tracks
+					{
+					}
+				}
+			}
+		}
+	}
+	Bank Offense
+	{
+		ConditionGroup
+		{
+			AnimationGroupLoaded
+			{
+				param00001	0x00000000
+				param00002	"G_STRIKER"
+				param00003	1
+				param00004	20.000000
+			}
+		}
+		Bank Short
+		{
+			ConditionGroup
+			{
+			}
+			Bank Strikes
+			{
+				ConditionGroup
+				{
+				}
+				Node JohnnyKick
+				{
+					ConditionGroup
+					{
+					}
+					Tracks
+					{
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	13
+						}
+						Target
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0x00000000
+							param00028	0.166667
+							param00032	1.570796
+							param00036	0.033333
+							param00040	360.000000
+							param00044	-1.000000
+							param00048	true
+							param00049	true
+							param00050	false
+							param00051	false
+							param00052	false
+							param00053	true
+							param00054	true
+							param00055	true
+						}
+						Animation
+						{
+							param00008	true
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	h"G_JOHNNY\RISING_ATTCK"
+							param00032	0
+							param00036	0
+							param00040	0x00000000
+							param00044	-1.000000
+							param00048	1.000000
+							param00052	0.100000
+							param00056	-1.000000
+							param00060	false
+							param00061	false
+						}
+						Collision
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0.233333
+							param00028	0.400000
+							param00032	"PunchHeavy02"
+							param00036	1
+							param00040	"HitImpactLarge"
+							param00044	"HEADUPPERCUT"
+							param00048	0.000000
+							param00052	15.000000
+							param00056	0.000000
+							param00060	0x0000C03F
+							param00064	0.000000
+							param00068	0.000000
+							param00072	0x00000000
+							param00076	0x00000000
+							param00080	20.000000
+							param00084	0x00000000
+							param00088	false
+							param00089	true
+							param00092	0.500000
+							param00528	8
+							param00532	true
+							param00533	false
+							param00534	false
+							param00535	false
+							param00536	false
+							param00537	false
+						}
+						Collision
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0.416667
+							param00028	0.616667
+							param00032	"PunchHeavy02"
+							param00036	1
+							param00040	"HitImpactLarge"
+							param00044	"HEADUPPERCUT"
+							param00048	0.000000
+							param00052	15.000000
+							param00056	0.000000
+							param00060	0x0000C03F
+							param00064	0.000000
+							param00068	0.000000
+							param00072	0x00000000
+							param00076	0x00000000
+							param00080	20.000000
+							param00084	0x00000000
+							param00088	false
+							param00089	true
+							param00092	0.500000
+							param00528	5
+							param00532	true
+							param00533	false
+							param00534	false
+							param00535	false
+							param00536	false
+							param00537	false
+						}
+					}
+				}
+				Bank HeavyKick
+				{
+					ConditionGroup
+					{
+					}
+					Node HeavyKick
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	0.300000
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_STRIKER\KICK_HEAVY"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.150000
+								param00052	0.100000
+								param00056	0.100000
+								param00060	false
+								param00061	false
+							}
+							Execute
+							{
+								param00008	false
+								param00012	0x9A99993E
+								param00016	-1.000000
+								param00032	"./Collision"
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xD9EE6E3E
+								param00024	6.000000
+								param00028	"Punch_Swing"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x9FAAAA3E
+								param00024	7.000000
+								param00028	"LegSwing"
+								param00032	2
+								param00036	false
+								param00037	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xB0AA2A3F
+								param00024	7.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xB6BB3B3F
+								param00024	5.000000
+								param00028	"Evade_Duck"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+						}
+						Bank Collision
+						{
+							ConditionGroup
+							{
+							}
+							Node AttackInterrupt
+							{
+								ConditionGroup
+								{
+									TargetConditionGroup
+									{
+									}
+									Print
+									{
+										param00001	0x00000000
+										param00002	"attack interrupt"
+									}
+								}
+								Tracks
+								{
+									Collision
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0.300000
+										param00028	0.366667
+										param00032	"KickHeavy"
+										param00036	1
+										param00040	"HitImpactLarge"
+										param00044	"RIB2"
+										param00048	5.000000
+										param00052	12.000000
+										param00056	0.000000
+										param00060	0x0000803F
+										param00064	0.000000
+										param00068	0.000000
+										param00072	0x00000000
+										param00076	0x00000000
+										param00080	20.000000
+										param00084	0x00000000
+										param00088	false
+										param00089	true
+										param00092	0.300000
+										param00104	"./OpportunityInsert"
+										param00528	8
+										param00532	true
+										param00533	true
+										param00534	false
+										param00535	false
+										param00536	false
+										param00537	false
+									}
+								}
+								Node OpportunityInsert
+								{
+									ConditionGroup
+									{
+									}
+									Tracks
+									{
+										Opportunity
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00032	"../GrabKnees"
+											param00040	-1.000000
+											param00044	0x8388083F
+											param00048	false
+											param00052	0x00000000
+											param00056	0x00000000
+											param00060	0x00000000
+										}
+									}
+								}
+								Node GrabKnees
+								{
+									ConditionGroup
+									{
+									}
+									Tracks
+									{
+										Execute
+										{
+											param00008	true
+											param00012	0x00000000
+											param00016	-1.000000
+											param00032	"../../../HeavyKickLAND"
+										}
+										Opportunity
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00032	"../../../GrabKnees/GV"
+											param00040	-1.000000
+											param00044	0x5055553F
+											param00048	false
+											param00052	0x00000000
+											param00056	0x00000000
+											param00060	0x00000000
+										}
+									}
+								}
+							}
+							Node Normal
+							{
+								ConditionGroup
+								{
+									Print
+									{
+										param00001	0x00000000
+										param00002	"normal collision"
+									}
+								}
+								Tracks
+								{
+									Collision
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0.300000
+										param00028	0.366667
+										param00032	"KickHeavy"
+										param00036	1
+										param00040	"HitImpactLarge"
+										param00044	"RIB2"
+										param00048	5.000000
+										param00052	12.000000
+										param00056	0.000000
+										param00060	0x0000803F
+										param00064	0.000000
+										param00068	0.000000
+										param00072	0x00000000
+										param00076	0x00000000
+										param00080	20.000000
+										param00084	0x00000000
+										param00088	false
+										param00089	true
+										param00092	0.300000
+										param00104	"../../HeavyKickLAND"
+										param00528	8
+										param00532	true
+										param00533	false
+										param00534	false
+										param00535	true
+										param00536	false
+										param00537	false
+									}
+								}
+							}
+						}
+						Node HeavyKickLAND
+						{
+							ConditionGroup
+							{
+							}
+							Tracks
+							{
+								Animation
+								{
+									param00008	true
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	h"G_STRIKER\KICK_HEAVY_LAND"
+									param00032	0
+									param00036	0
+									param00040	0x7288083E
+									param00044	-1.000000
+									param00048	1.000000
+									param00052	-1.000000
+									param00056	-1.000000
+									param00060	false
+									param00061	false
+								}
+								Target
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	0x00000000
+									param00028	0.166667
+									param00032	1.570796
+									param00036	0.300000
+									param00040	360.000000
+									param00044	-1.000000
+									param00048	true
+									param00049	true
+									param00050	false
+									param00051	false
+									param00052	false
+									param00053	true
+									param00054	true
+									param00055	true
+								}
+							}
+						}
+						Bank GrabKnees
+						{
+							ConditionGroup
+							{
+							}
+							Node GV
+							{
+								ConditionGroup
+								{
+									TargetRelativeOrientation
+									{
+										param00001	0x00000000
+										param00002	0x00000000
+										param00003	3.141593
+										param00004	1.570796
+									}
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_STRIKER\GRAB_KNEE_2_GV"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									PlayOnTarget
+									{
+										param00008	false
+										param00012	0x00000000
+										param00032	"../RCV"
+										param00040	false
+										param00041	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x9488883E
+										param00024	3.000000
+										param00028	"Kick"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xC1AA2A3E
+										param00024	5.000000
+										param00028	"Evade_Duck"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									JointDriver
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"MOTIONCONTROLLERS\g_knee_B"
+										param00032	0x00000000
+										param00036	0x00000000
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	0x000080BF
+										param00088	1
+										param00092	"ROOT"
+										param00096	0x00000000
+										param00100	"ROOT"
+										param00104	false
+									}
+									DamageTarget
+									{
+										param00008	false
+										param00012	0.266667
+										param00016	0.300000
+										param00024	10.000000
+										param00028	-1.000000
+										param00032	-1
+									}
+								}
+							}
+							Node RCV
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_STRIKER\GRAB_KNEE_2_RCV"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									DamageHandle
+									{
+										param00024	1.000000
+										param00028	true
+										param00029	true
+									}
+								}
+							}
+						}
+					}
+					Node MidKick
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	0.300000
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_STRIKER\KICK_RIB"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	-1.000000
+								param00056	-1.000000
+								param00060	false
+								param00061	false
+							}
+							Collision
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0.500000
+								param00028	0.566667
+								param00032	"Kick"
+								param00036	1
+								param00040	"HitImpactLarge"
+								param00044	"LEG_FRONT_L_HARD"
+								param00048	5.000000
+								param00052	10.000000
+								param00056	0.000000
+								param00060	0x0000803F
+								param00064	0.000000
+								param00068	0.000000
+								param00072	0x00000000
+								param00076	0x00000000
+								param00080	20.000000
+								param00084	0x00000000
+								param00088	false
+								param00089	true
+								param00092	0.250000
+								param00528	8
+								param00532	true
+								param00533	false
+								param00534	false
+								param00535	false
+								param00536	false
+								param00537	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xC1AA2A3E
+								param00024	6.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xC7BBBB3E
+								param00024	1.000000
+								param00028	"Leg_Swing"
+								param00032	2
+								param00036	false
+								param00037	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xFAEEEE3E
+								param00024	6.000000
+								param00028	"Evade_Duck"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+						}
+					}
+				}
+				Bank LightAttacks
+				{
+					ConditionGroup
+					{
+					}
+					Bank Combo1
+					{
+						ConditionGroup
+						{
+						}
+						Node RightHook
+						{
+							ConditionGroup
+							{
+							}
+							Tracks
+							{
+								Target
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	0x00000000
+									param00028	0.166667
+									param00032	1.570796
+									param00036	0.233333
+									param00040	360.000000
+									param00044	-1.000000
+									param00048	true
+									param00049	true
+									param00050	false
+									param00051	false
+									param00052	false
+									param00053	true
+									param00054	true
+									param00055	true
+								}
+								Animation
+								{
+									param00008	true
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	h"G_STRIKER\PUNCH_A1"
+									param00032	0
+									param00036	0
+									param00040	0x00000000
+									param00044	-1.000000
+									param00048	1.250000
+									param00052	0.066667
+									param00056	-1.000000
+									param00060	false
+									param00061	false
+								}
+								Collision
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	0.233333
+									param00028	0.350000
+									param00032	"PunchLite01"
+									param00036	1
+									param00040	"HitImpactSmall"
+									param00044	"HEADCROSS"
+									param00048	5.000000
+									param00052	7.000000
+									param00056	0.366667
+									param00060	0x0000803F
+									param00064	0.000000
+									param00068	0.000000
+									param00072	0x00000000
+									param00076	0x00000000
+									param00080	10.000000
+									param00084	0x00000000
+									param00088	false
+									param00089	true
+									param00092	0.300000
+									param00528	32
+									param00532	true
+									param00533	false
+									param00534	false
+									param00535	false
+									param00536	false
+									param00537	false
+								}
+								Opportunity
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00032	"../../HeavyKick"
+									param00040	-1.000000
+									param00044	0x00000000
+									param00048	false
+									param00052	0x00000000
+									param00056	0x00000000
+									param00060	0x00000000
+								}
+								Opportunity
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00032	"./LeftHook"
+									param00040	-1.000000
+									param00044	0x9FAAAA3E
+									param00048	false
+									param00052	0x00000000
+									param00056	0x00000000
+									param00060	0x00000000
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0xF720843C
+									param00024	1.000000
+									param00028	"Scuff"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0xEA5A6B3E
+									param00024	1.000000
+									param00028	"Swing"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0x7231E63E
+									param00024	1.000000
+									param00028	"Swing"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0x7B10223F
+									param00024	1.000000
+									param00028	"Scuff"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+							}
+							Node LeftHook
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Target
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0x00000000
+										param00028	0.166667
+										param00032	1.570796
+										param00036	0.133333
+										param00040	360.000000
+										param00044	-1.000000
+										param00048	true
+										param00049	true
+										param00050	false
+										param00051	false
+										param00052	false
+										param00053	true
+										param00054	true
+										param00055	true
+									}
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_STRIKER\PUNCH_A2"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.250000
+										param00052	0.066667
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									Collision
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0.066667
+										param00028	0.233333
+										param00032	"PunchLite01"
+										param00036	1
+										param00040	"HitImpactSmall"
+										param00044	"HEADLEFT"
+										param00048	5.000000
+										param00052	7.000000
+										param00056	0.500000
+										param00060	0x0000803F
+										param00064	0.000000
+										param00068	0.000000
+										param00072	0x00000000
+										param00076	0x00000000
+										param00080	10.000000
+										param00084	0x00000000
+										param00088	false
+										param00089	true
+										param00092	0.300000
+										param00528	24
+										param00532	true
+										param00533	false
+										param00534	false
+										param00535	false
+										param00536	false
+										param00537	false
+									}
+									Opportunity
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00032	"../../../HeavyKick"
+										param00040	-1.000000
+										param00044	0x9FAAAA3E
+										param00048	false
+										param00052	0x00000000
+										param00056	0x00000000
+										param00060	0x00000000
+									}
+									Opportunity
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00032	"./RightStomach"
+										param00040	-1.000000
+										param00044	0x9FAAAA3E
+										param00048	false
+										param00052	0x00000000
+										param00056	0x00000000
+										param00060	0x00000000
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x00000000
+										param00024	1.000000
+										param00028	"Scuff"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x06638C3E
+										param00024	1.000000
+										param00028	"Swing"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x9A94F23E
+										param00024	1.000000
+										param00028	"Swing"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xFF41283F
+										param00024	1.000000
+										param00028	"Scuff"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+								}
+								Node RightStomach
+								{
+									ConditionGroup
+									{
+									}
+									Tracks
+									{
+										Target
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	0x00000000
+											param00028	0.166667
+											param00032	1.570796
+											param00036	0.116667
+											param00040	360.000000
+											param00044	-1.000000
+											param00048	true
+											param00049	true
+											param00050	false
+											param00051	false
+											param00052	false
+											param00053	true
+											param00054	true
+											param00055	true
+										}
+										Animation
+										{
+											param00008	true
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	h"G_STRIKER\PUNCH_A3"
+											param00032	0
+											param00036	0
+											param00040	0xCDCCCC3D
+											param00044	-1.000000
+											param00048	1.000000
+											param00052	0.066667
+											param00056	-1.000000
+											param00060	false
+											param00061	false
+										}
+										Collision
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	0.116667
+											param00028	0.233333
+											param00032	"Gut_Punch"
+											param00036	1
+											param00040	"HitImpactSmall"
+											param00044	"WTRPIPESWING"
+											param00048	5.000000
+											param00052	10.000000
+											param00056	0.933333
+											param00060	0x0000003F
+											param00064	0.000000
+											param00068	0.000000
+											param00072	0x00000000
+											param00076	0x00000000
+											param00080	15.000000
+											param00084	0x00000000
+											param00088	false
+											param00089	true
+											param00092	0.300000
+											param00528	30
+											param00532	true
+											param00533	false
+											param00534	false
+											param00535	false
+											param00536	false
+											param00537	false
+										}
+										SoundFX
+										{
+											param00008	false
+											param00012	0x85EF3D3E
+											param00024	1.000000
+											param00028	"Scuff"
+											param00032	1
+											param00036	false
+											param00037	true
+										}
+										SoundFX
+										{
+											param00008	false
+											param00012	0xD239873E
+											param00024	1.000000
+											param00028	"Punch_Swing"
+											param00032	1
+											param00036	false
+											param00037	true
+										}
+									}
+								}
+							}
+						}
+					}
+					Bank Combo2
+					{
+						ConditionGroup
+						{
+						}
+						Node Jab
+						{
+							ConditionGroup
+							{
+							}
+							Tracks
+							{
+								Target
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	0x00000000
+									param00028	0.166667
+									param00032	1.570796
+									param00036	0.233333
+									param00040	360.000000
+									param00044	-1.000000
+									param00048	true
+									param00049	true
+									param00050	false
+									param00051	false
+									param00052	false
+									param00053	true
+									param00054	true
+									param00055	true
+								}
+								Animation
+								{
+									param00008	true
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	h"G_JOHNNY\PUNCH_1"
+									param00032	0
+									param00036	0
+									param00040	0x00000000
+									param00044	-1.000000
+									param00048	1.250000
+									param00052	0.066667
+									param00056	-1.000000
+									param00060	false
+									param00061	false
+								}
+								Collision
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	0.116667
+									param00028	0.233333
+									param00032	"PunchLite01"
+									param00036	1
+									param00040	"HitImpactSmall"
+									param00044	"HEADJAB"
+									param00048	5.000000
+									param00052	5.000000
+									param00056	0.366667
+									param00060	0x0000803F
+									param00064	0.000000
+									param00068	0.000000
+									param00072	0x00000000
+									param00076	0x00000000
+									param00080	10.000000
+									param00084	0x00000000
+									param00088	false
+									param00089	true
+									param00092	0.300000
+									param00528	24
+									param00532	true
+									param00533	false
+									param00534	false
+									param00535	false
+									param00536	false
+									param00537	false
+								}
+								Opportunity
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00032	"./RightHook"
+									param00040	-1.000000
+									param00044	0x9FAAAA3E
+									param00048	false
+									param00052	0x00000000
+									param00056	0x00000000
+									param00060	0x00000000
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0x0AD7A33C
+									param00024	1.000000
+									param00028	"Scuff"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0x97039D3D
+									param00024	1.000000
+									param00028	"Swing"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0xCDCCCC3D
+									param00024	1.000000
+									param00028	"Swing"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+								SoundFX
+								{
+									param00008	false
+									param00012	0x0000803E
+									param00024	1.000000
+									param00028	"Scuff"
+									param00032	1
+									param00036	false
+									param00037	true
+								}
+							}
+							Node RightHook
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Target
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0x00000000
+										param00028	0.166667
+										param00032	1.570796
+										param00036	0.133333
+										param00040	360.000000
+										param00044	-1.000000
+										param00048	true
+										param00049	true
+										param00050	false
+										param00051	false
+										param00052	false
+										param00053	true
+										param00054	true
+										param00055	true
+									}
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_JOHNNY\PUNCH_2"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.250000
+										param00052	0.066667
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									Collision
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0.066667
+										param00028	0.233333
+										param00032	"PunchLite01"
+										param00036	1
+										param00040	"HitImpactSmall"
+										param00044	"HEADCROSS"
+										param00048	5.000000
+										param00052	7.000000
+										param00056	0.500000
+										param00060	0x0000803F
+										param00064	0.000000
+										param00068	0.000000
+										param00072	0x00000000
+										param00076	0x00000000
+										param00080	10.000000
+										param00084	0x00000000
+										param00088	false
+										param00089	true
+										param00092	0.300000
+										param00528	32
+										param00532	true
+										param00533	false
+										param00534	false
+										param00535	false
+										param00536	false
+										param00537	false
+									}
+									Opportunity
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00032	"./LeftHook"
+										param00040	-1.000000
+										param00044	0x9FAAAA3E
+										param00048	false
+										param00052	0x00000000
+										param00056	0x00000000
+										param00060	0x00000000
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x00000000
+										param00024	1.000000
+										param00028	"Scuff"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xC1AA2A3E
+										param00024	1.000000
+										param00028	"Swing"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xCDCCCC3E
+										param00024	1.000000
+										param00028	"Swing"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xFAEEEE3E
+										param00024	1.000000
+										param00028	"Scuff"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+								}
+								Node LeftHook
+								{
+									ConditionGroup
+									{
+									}
+									Tracks
+									{
+										Target
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	0x00000000
+											param00028	0.166667
+											param00032	1.570796
+											param00036	0.116667
+											param00040	360.000000
+											param00044	-1.000000
+											param00048	true
+											param00049	true
+											param00050	false
+											param00051	false
+											param00052	false
+											param00053	true
+											param00054	true
+											param00055	true
+										}
+										Animation
+										{
+											param00008	true
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	h"G_JOHNNY\PUNCH_3"
+											param00032	0
+											param00036	0
+											param00040	0xCDCCCC3D
+											param00044	-1.000000
+											param00048	1.000000
+											param00052	0.066667
+											param00056	-1.000000
+											param00060	false
+											param00061	false
+										}
+										Collision
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	0.116667
+											param00028	0.233333
+											param00032	"Gut_Punch"
+											param00036	1
+											param00040	"HitImpactSmall"
+											param00044	"HEADLEFT"
+											param00048	5.000000
+											param00052	7.000000
+											param00056	0.933333
+											param00060	0x0000003F
+											param00064	0.000000
+											param00068	0.000000
+											param00072	0x00000000
+											param00076	0x00000000
+											param00080	15.000000
+											param00084	0x00000000
+											param00088	false
+											param00089	true
+											param00092	0.300000
+											param00528	24
+											param00532	true
+											param00533	false
+											param00534	false
+											param00535	false
+											param00536	false
+											param00537	false
+										}
+										SoundFX
+										{
+											param00008	false
+											param00012	0x0000003F
+											param00024	1.000000
+											param00028	"Scuff"
+											param00032	1
+											param00036	false
+											param00037	true
+										}
+										SoundFX
+										{
+											param00008	false
+											param00012	0xC1AA2A3E
+											param00024	1.000000
+											param00028	"Punch_Swing"
+											param00032	1
+											param00036	false
+											param00037	true
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				Bank ToSpecial
+				{
+					ConditionGroup
+					{
+					}
+					Node ToSpecial
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Opportunity
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"../../../../Special/SpecialActions"
+								param00040	-1.000000
+								param00044	0x00000000
+								param00048	false
+								param00052	0x00000000
+								param00056	0x00000000
+								param00060	0x00000000
+							}
+						}
+					}
+				}
+			}
+		}
+		Bank Medium
+		{
+			ConditionGroup
+			{
+			}
+			Bank Strikes
+			{
+				ConditionGroup
+				{
+				}
+				Node JohnnyKick
+				{
+					ConditionGroup
+					{
+					}
+					Tracks
+					{
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	13
+						}
+						Target
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0x00000000
+							param00028	0.166667
+							param00032	1.570796
+							param00036	0.033333
+							param00040	360.000000
+							param00044	-1.000000
+							param00048	true
+							param00049	true
+							param00050	false
+							param00051	false
+							param00052	false
+							param00053	true
+							param00054	true
+							param00055	true
+						}
+						Animation
+						{
+							param00008	true
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	h"G_JOHNNY\RISING_ATTCK"
+							param00032	0
+							param00036	0
+							param00040	0x00000000
+							param00044	-1.000000
+							param00048	1.000000
+							param00052	0.100000
+							param00056	-1.000000
+							param00060	false
+							param00061	false
+						}
+						Collision
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0.233333
+							param00028	0.400000
+							param00032	"PunchHeavy02"
+							param00036	1
+							param00040	"HitImpactLarge"
+							param00044	"HEADUPPERCUT"
+							param00048	0.000000
+							param00052	15.000000
+							param00056	0.000000
+							param00060	0x0000C03F
+							param00064	0.000000
+							param00068	0.000000
+							param00072	0x00000000
+							param00076	0x00000000
+							param00080	20.000000
+							param00084	0x00000000
+							param00088	false
+							param00089	true
+							param00092	0.500000
+							param00528	8
+							param00532	true
+							param00533	false
+							param00534	false
+							param00535	false
+							param00536	false
+							param00537	false
+						}
+						Collision
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0.416667
+							param00028	0.616667
+							param00032	"PunchHeavy02"
+							param00036	1
+							param00040	"HitImpactLarge"
+							param00044	"HEADUPPERCUT"
+							param00048	0.000000
+							param00052	15.000000
+							param00056	0.000000
+							param00060	0x0000C03F
+							param00064	0.000000
+							param00068	0.000000
+							param00072	0x00000000
+							param00076	0x00000000
+							param00080	20.000000
+							param00084	0x00000000
+							param00088	false
+							param00089	true
+							param00092	0.500000
+							param00528	5
+							param00532	true
+							param00533	false
+							param00534	false
+							param00535	false
+							param00536	false
+							param00537	false
+						}
+					}
+				}
+				Bank HeavyAttack
+				{
+					ConditionGroup
+					{
+					}
+					Node SlidingPunch
+					{
+						ConditionGroup
+						{
+							ConditionGroup
+							{
+							}
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_STRIKER\PUNCH_MED"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	-1.000000
+								param00056	-1.000000
+								param00060	false
+								param00061	false
+							}
+							Collision
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0.800000
+								param00028	0.966667
+								param00036	1
+								param00044	"HEADUPPERCUT"
+								param00048	5.000000
+								param00052	15.000000
+								param00056	-1.000000
+								param00060	0x00000000
+								param00064	-1.000000
+								param00068	-1.000000
+								param00072	0x00000000
+								param00076	0x00000000
+								param00080	20.000000
+								param00084	0x00000000
+								param00088	false
+								param00089	true
+								param00092	0.500000
+								param00528	24
+								param00532	true
+								param00533	false
+								param00534	false
+								param00535	false
+								param00536	false
+								param00537	false
+							}
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	0.666667
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							Opportunity
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"../../../../Taunts/Taunt_B"
+								param00040	-1.000000
+								param00044	0xDBDD9D3F
+								param00048	false
+								param00052	0x00000000
+								param00056	0x00000000
+								param00060
+								{
+									Random
+									{
+										param00001	0x00000000
+										param00002	0.500000
+										param00003	4
+										param00004	0x00000100
+										param00005	0x00000000
+									}
+								}
+							}
+						}
+					}
+					Node HeavyKick
+					{
+						ConditionGroup
+						{
+							ConditionGroup
+							{
+							}
+						}
+						Tracks
+						{
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	0.300000
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_STRIKER\KICK_HEAVY_2"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.150000
+								param00052	0.100000
+								param00056	0.100000
+								param00060	false
+								param00061	false
+							}
+							Collision
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0.333333
+								param00028	0.433333
+								param00032	"KickHeavy"
+								param00036	1
+								param00040	"HitImpactLarge"
+								param00044	"RIB1"
+								param00048	5.000000
+								param00052	20.000000
+								param00056	0.000000
+								param00060	0x0000803F
+								param00064	0.000000
+								param00068	0.000000
+								param00072	0x00000000
+								param00076	0x00000000
+								param00080	20.000000
+								param00084	0x00000000
+								param00088	false
+								param00089	true
+								param00092	0.300000
+								param00104	"./InsertOpportunity"
+								param00528	4
+								param00532	true
+								param00533	false
+								param00534	false
+								param00535	true
+								param00536	false
+								param00537	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xD9EE6E3E
+								param00024	6.000000
+								param00028	"Punch_Swing"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x9FAAAA3E
+								param00024	7.000000
+								param00028	"LegSwing"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xB0AA2A3F
+								param00024	7.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xB6BB3B3F
+								param00024	5.000000
+								param00028	"Evade_Duck"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+						}
+						Node InsertOpportunity
+						{
+							ConditionGroup
+							{
+							}
+							Tracks
+							{
+								Opportunity
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00032	"../HeavyKickLAND"
+									param00040	-1.000000
+									param00044	0xCDCCCC3E
+									param00048	false
+									param00052	0x00000000
+									param00056	0x00000000
+									param00060	0x00000000
+								}
+							}
+						}
+						Node HeavyKickLAND
+						{
+							ConditionGroup
+							{
+							}
+							Tracks
+							{
+								Target
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	0x00000000
+									param00028	0.166667
+									param00032	1.570796
+									param00036	0.300000
+									param00040	360.000000
+									param00044	-1.000000
+									param00048	true
+									param00049	true
+									param00050	false
+									param00051	false
+									param00052	false
+									param00053	true
+									param00054	true
+									param00055	true
+								}
+								Animation
+								{
+									param00008	true
+									param00012	0x00000000
+									param00016	-1.000000
+									param00024	h"G_STRIKER\KICK_HEAVY_LAND2"
+									param00032	0
+									param00036	0
+									param00040	0xCDCCCC3D
+									param00044	-1.000000
+									param00048	1.000000
+									param00052	-1.000000
+									param00056	-1.000000
+									param00060	false
+									param00061	false
+								}
+								Opportunity
+								{
+									param00008	false
+									param00012	0x00000000
+									param00016	-1.000000
+									param00032	"../../../../../Taunts/Taunt_B"
+									param00040	-1.000000
+									param00044	0x4A44443F
+									param00048	false
+									param00052	0x00000000
+									param00056	0x00000000
+									param00060
+									{
+										Random
+										{
+											param00001	0x00000000
+											param00002	0.750000
+											param00003	4
+											param00004	0x00000100
+											param00005	0x00000000
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				Bank ToSpecial
+				{
+					ConditionGroup
+					{
+					}
+					Node ToSpecial
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Opportunity
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"../../../../Special/SpecialActions"
+								param00040	-1.000000
+								param00044	0x00000000
+								param00048	false
+								param00052	0x00000000
+								param00056	0x00000000
+								param00060	0x00000000
+							}
+						}
+					}
+				}
+			}
+		}
+		Bank Special
+		{
+			ConditionGroup
+			{
+			}
+			Bank SpecialActions
+			{
+				ConditionGroup
+				{
+				}
+				Bank LightAttacks
+				{
+					ConditionGroup
+					{
+					}
+					Node Shin
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_JOHNNY\PUNCH_2"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	0.133333
+								param00056	-1.000000
+								param00060	false
+								param00061	false
+							}
+							Opportunity
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"./HeavyAttacks/RoundHouseKick_L"
+								param00040	0.566667
+								param00044	0x1711113F
+								param00048	false
+								param00052	0x00000000
+								param00056	0x00000000
+								param00060	0x00000000
+							}
+							Collision
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0.166667
+								param00028	0.300000
+								param00032	"PunchLite01"
+								param00036	1
+								param00044	"HEADCROSS"
+								param00048	5.000000
+								param00052	5.000000
+								param00056	-1.000000
+								param00060	0x00000000
+								param00064	-1.000000
+								param00068	0.200000
+								param00072	0x00000000
+								param00076	0x00000000
+								param00080	20.000000
+								param00084	0x00000000
+								param00088	false
+								param00089	true
+								param00092	0.500000
+								param00528	30
+								param00532	true
+								param00533	false
+								param00534	false
+								param00535	false
+								param00536	false
+								param00537	false
+							}
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	-1.000000
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+						}
+						Bank HeavyAttacks
+						{
+							ConditionGroup
+							{
+							}
+							Node RoundHouseKick_L
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_JOHNNY\PUNCH_3"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	0.133333
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									Opportunity
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00032	"./AxeKicks"
+										param00040	0.800000
+										param00044	0xCDCC4C3F
+										param00048	false
+										param00052	0x00000000
+										param00056	0x00000000
+										param00060	0x00000000
+									}
+									Collision
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0.166667
+										param00028	0.366667
+										param00032	"PunchLite01"
+										param00036	1
+										param00044	"WTRPIPESWING"
+										param00048	5.000000
+										param00052	10.000000
+										param00056	-1.000000
+										param00060	0x00000000
+										param00064	-1.000000
+										param00068	0.500000
+										param00072	0x00000000
+										param00076	0x00000000
+										param00080	20.000000
+										param00084	0x00000000
+										param00088	false
+										param00089	true
+										param00092	0.500000
+										param00528	22
+										param00532	true
+										param00533	false
+										param00534	false
+										param00535	false
+										param00536	false
+										param00537	false
+									}
+									Target
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0x00000000
+										param00028	0.166667
+										param00032	1.570796
+										param00036	-1.000000
+										param00040	360.000000
+										param00044	-1.000000
+										param00048	true
+										param00049	true
+										param00050	false
+										param00051	false
+										param00052	false
+										param00053	true
+										param00054	true
+										param00055	true
+									}
+								}
+								Bank AxeKicks
+								{
+									ConditionGroup
+									{
+									}
+									Node AxeKick_R
+									{
+										ConditionGroup
+										{
+										}
+										Tracks
+										{
+											Animation
+											{
+												param00008	true
+												param00012	0x00000000
+												param00016	-1.000000
+												param00024	h"G_JOHNNY\BOOTKICK"
+												param00032	0
+												param00036	0
+												param00040	0x00000000
+												param00044	-1.000000
+												param00048	1.000000
+												param00052	0.133333
+												param00056	-1.000000
+												param00060	false
+												param00061	false
+											}
+											Collision
+											{
+												param00008	false
+												param00012	0x00000000
+												param00016	-1.000000
+												param00024	0.533333
+												param00028	0.700000
+												param00032	"KickHeavy"
+												param00036	1
+												param00044	"HEADWEAPONHARD"
+												param00048	5.000000
+												param00052	5.000000
+												param00056	-1.000000
+												param00060	0xB0AA2A3F
+												param00064	-1.000000
+												param00068	-1.000000
+												param00072	0x00000000
+												param00076	0x00000000
+												param00080	20.000000
+												param00084	0x00000000
+												param00088	false
+												param00089	true
+												param00092	0.500000
+												param00528	8
+												param00532	true
+												param00533	false
+												param00534	false
+												param00535	false
+												param00536	false
+												param00537	false
+											}
+											Target
+											{
+												param00008	false
+												param00012	0x00000000
+												param00016	-1.000000
+												param00024	0x00000000
+												param00028	0.166667
+												param00032	1.570796
+												param00036	0.733333
+												param00040	360.000000
+												param00044	-1.000000
+												param00048	true
+												param00049	true
+												param00050	false
+												param00051	false
+												param00052	false
+												param00053	true
+												param00054	true
+												param00055	true
+											}
+											Opportunity
+											{
+												param00008	false
+												param00012	0x4A44443F
+												param00016	-1.000000
+												param00032	"./AxeKickFollowup"
+												param00040	-1.000000
+												param00044	0x00000000
+												param00048	false
+												param00052	0x00000000
+												param00056	0x00000000
+												param00060	0x00000000
+											}
+										}
+										Node AxeKickFollowup
+										{
+											ConditionGroup
+											{
+												TargetPlaying
+												{
+													param00001	0x00000000
+													param00002	h"HitTree"
+													param00003	1
+												}
+											}
+											Tracks
+											{
+												Animation
+												{
+													param00008	true
+													param00012	0x00000000
+													param00016	-1.000000
+													param00024	h"G_JOHNNY\BOOTKICK"
+													param00032	0
+													param00036	0
+													param00040	0x4A44443F
+													param00044	-1.000000
+													param00048	1.000000
+													param00052	0.133333
+													param00056	-1.000000
+													param00060	false
+													param00061	false
+												}
+												Collision
+												{
+													param00008	false
+													param00012	0x00000000
+													param00016	-1.000000
+													param00024	0.000000
+													param00028	-1.000000
+													param00036	1
+													param00048	5.000000
+													param00052	15.000000
+													param00056	-1.000000
+													param00060	0x00000000
+													param00064	-1.000000
+													param00068	-1.000000
+													param00072	0x00000000
+													param00076	0x00000000
+													param00080	20.000000
+													param00084	0x00000000
+													param00088	false
+													param00089	true
+													param00092	0.500000
+													param00104	"./Spit/AxeKick_Grap_GV"
+													param00120	"./Spit/AxeKick_Grap_RCV"
+													param00528	8
+													param00532	true
+													param00533	true
+													param00534	false
+													param00535	false
+													param00536	false
+													param00537	false
+												}
+											}
+											Bank Spit
+											{
+												ConditionGroup
+												{
+												}
+												Node AxeKick_Grap_GV
+												{
+													ConditionGroup
+													{
+													}
+													Tracks
+													{
+														Animation
+														{
+															param00008	true
+															param00012	0x00000000
+															param00016	-1.000000
+															param00024	h"G_JOHNNY\GRAP_AXEKICK_GV"
+															param00032	0
+															param00036	0
+															param00040	0xC1AA2A3E
+															param00044	-1.000000
+															param00048	1.000000
+															param00052	0.133333
+															param00056	-1.000000
+															param00060	false
+															param00061	false
+														}
+														SpeechTrack
+														{
+															param00008	false
+															param00012	0x00000000
+															param00024	233
+															param00028	true
+															param00032	22
+															param00036	4
+															param00040	0x00000000
+															param00044	1.500000
+															param00048	false
+															param00052	666.666016
+															param00056	666.666016
+															param00060	666.666016
+															param00064	false
+														}
+														JointDriver
+														{
+															param00008	true
+															param00012	0x00000000
+															param00016	-1.000000
+															param00024	h"MOTIONCONTROLLERS\JGAK"
+															param00032	0x00000000
+															param00036	0x00000000
+															param00040	0xC1AA2A3E
+															param00044	-1.000000
+															param00048	1.000000
+															param00052	0.066667
+															param00056	0x000080BF
+															param00088	0
+															param00092	"ROOT"
+															param00096	0x01000000
+															param00100	"ROOT"
+															param00104	false
+														}
+														AttachedEffect
+														{
+															param00008	false
+															param00012	1.933333
+															param00016	-1.000000
+															param00024	"Spit"
+															param00028	"Mouth"
+															param00032	-1
+														}
+														PlayOnTarget
+														{
+															param00008	false
+															param00012	0x00000000
+															param00032	"../AxeKick_Grap_RCV"
+															param00040	false
+															param00041	true
+														}
+														SoundFX
+														{
+															param00008	false
+															param00012	0xCDCC4C3F
+															param00024	1.000000
+															param00028	"HeadFootSquish"
+															param00032	2
+															param00036	false
+															param00037	false
+														}
+														SoundFX
+														{
+															param00008	false
+															param00012	0xCDCC8C3F
+															param00024	1.000000
+															param00028	"HeadFootSquish"
+															param00032	2
+															param00036	false
+															param00037	false
+														}
+														SoundFX
+														{
+															param00008	false
+															param00012	0xF2EEAE3F
+															param00024	1.000000
+															param00028	"HeadFootSquish"
+															param00032	2
+															param00036	false
+															param00037	false
+														}
+														SoundFX
+														{
+															param00008	false
+															param00012	0xDBDDDD3F
+															param00024	1.000000
+															param00028	"HeadFootSquish"
+															param00032	2
+															param00036	false
+															param00037	false
+														}
+														SoundFX
+														{
+															param00008	false
+															param00012	0x7577F73F
+															param00024	1.000000
+															param00028	"Spit"
+															param00032	2
+															param00036	false
+															param00037	false
+														}
+														SoundFX
+														{
+															param00008	false
+															param00012	0xCDCC2C40
+															param00024	1.000000
+															param00028	"HeadCrunch"
+															param00032	2
+															param00036	false
+															param00037	false
+														}
+													}
+												}
+												Node AxeKick_Grap_RCV
+												{
+													ConditionGroup
+													{
+													}
+													Tracks
+													{
+														Animation
+														{
+															param00008	true
+															param00012	0x00000000
+															param00016	-1.000000
+															param00024	h"G_JOHNNY\GRAP_AXEKICK_RCV"
+															param00032	0
+															param00036	0
+															param00040	0xC1AA2A3E
+															param00044	-1.000000
+															param00048	1.000000
+															param00052	0.133333
+															param00056	-1.000000
+															param00060	false
+															param00061	false
+														}
+														Sequence
+														{
+															param00008	false
+															param00032	"../../../../../../../../../../../../../HitTree/Standing/PostHit/BellyDown"
+														}
+														Damage
+														{
+															param00008	false
+															param00012	0x00000000
+															param00016	-1.000000
+															param00024	20.000000
+															param00028	-1.000000
+															param00032	-1
+														}
+														DamageHandle
+														{
+															param00024	1.000000
+															param00028	false
+															param00029	true
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				Bank Grapples
+				{
+					ConditionGroup
+					{
+					}
+					Node Dash
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Execute
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"../../ExecuteNodes/DashLoco"
+							}
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	-1.000000
+								param00040	360.000000
+								param00044	10000.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							Collision
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0.000000
+								param00028	33.333332
+								param00032	"Headbutt"
+								param00036	1
+								param00048	5.000000
+								param00052	15.000000
+								param00056	0.000000
+								param00060	0x0000803F
+								param00064	0.000000
+								param00068	0.000000
+								param00072	0x00000000
+								param00076	0x00000000
+								param00080	20.000000
+								param00084	0x00000000
+								param00088	false
+								param00089	true
+								param00092	0.680000
+								param00104	"./ThroatGrab/ThroatGrab_Gv"
+								param00120	"./ThroatGrab/ThroatGrab_Rcv"
+								param00528	12
+								param00532	true
+								param00533	true
+								param00534	false
+								param00535	false
+								param00536	false
+								param00537	false
+							}
+							Opportunity
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"./DashTired"
+								param00040	-1.000000
+								param00044	0x00000000
+								param00048	false
+								param00052	0x14000000
+								param00056	0x00000000
+								param00060	0x00000000
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x00000000
+								param00024	true
+								param00028	13
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	13
+							}
+						}
+						Bank ThroatGrab
+						{
+							ConditionGroup
+							{
+							}
+							Node ThroatGrab_Gv
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_GRAPPLER\JOH_GRAP_1_ACT"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									SpeechTrack
+									{
+										param00008	false
+										param00012	0x00000000
+										param00024	233
+										param00028	true
+										param00032	20
+										param00036	4
+										param00040	0x00000000
+										param00044	1.500000
+										param00048	false
+										param00052	666.666016
+										param00056	666.666016
+										param00060	666.666016
+										param00064	false
+									}
+									JointDriver
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"MOTIONCONTROLLERS\JOH_G"
+										param00032	0x00000000
+										param00036	0x00000000
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	0x000080BF
+										param00088	0
+										param00092	"Root"
+										param00096	0x01000000
+										param00100	"Root"
+										param00104	false
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x7D77773F
+										param00024	1.000000
+										param00028	"Leg_Swing"
+										param00032	2
+										param00036	false
+										param00037	false
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xCDCC8C3F
+										param00024	1.000000
+										param00028	"PunchHeavy01"
+										param00032	2
+										param00036	false
+										param00037	false
+									}
+								}
+							}
+							Node ThroatGrab_Rcv
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_GRAPPLER\JOH_GRAP_1_VIC"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									Execute
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00032	"../../../../../../../../HitTree/Standing/Base/DropWeapon"
+									}
+									Sequence
+									{
+										param00008	false
+										param00032	"../../../../../../../../HitTree/Standing/PostHit/BellyUp"
+									}
+									Damage
+									{
+										param00008	false
+										param00012	0xD3DDDD3E
+										param00016	-1.000000
+										param00024	5.000000
+										param00028	-1.000000
+										param00032	-1
+									}
+									Damage
+									{
+										param00008	false
+										param00012	0xF2EE8E3F
+										param00016	-1.000000
+										param00024	15.000000
+										param00028	-1.000000
+										param00032	-1
+									}
+									Damage
+									{
+										param00008	false
+										param00012	0xBFBB9B3F
+										param00016	-1.000000
+										param00024	5.000000
+										param00028	-1.000000
+										param00032	-1
+									}
+									DamageHandle
+									{
+										param00024	1.000000
+										param00028	true
+										param00029	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x1F858B3F
+										param00024	1.000000
+										param00028	"Swing"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0xCDCC8C3F
+										param00024	1.000000
+										param00028	"Scuff"
+										param00032	1
+										param00036	false
+										param00037	true
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x9A99993F
+										param00024	1.000000
+										param00028	"Bodyfall"
+										param00032	2
+										param00036	false
+										param00037	false
+									}
+									SoundFX
+									{
+										param00008	false
+										param00012	0x9A99993F
+										param00024	1.000000
+										param00028	"Scuff"
+										param00032	1
+										param00036	false
+										param00037	false
+									}
+									Execute
+									{
+										param00008	false
+										param00012	0x9A99993F
+										param00016	-1.000000
+										param00032	"../../../../../../../../HitTree/SFX/HeavyHits"
+									}
+								}
+							}
+						}
+						Bank DashTired
+						{
+							ConditionGroup
+							{
+								ActionNodePlayTime
+								{
+									param00001	0x00000000
+									param00002	4.000000
+									param00003	5
+								}
+							}
+							Node TIRED
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	5.000000
+										param00024	h"C_PLAYER\TIRED_STITCHPAIN"
+										param00032	2
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	-1.000000
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+								}
+							}
+						}
+					}
+				}
+				Bank ExecuteNodes
+				{
+					ConditionGroup
+					{
+					}
+					Node DashLoco
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Locomotion
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	6.500000
+								param00028	6.500000
+								param00032	1.000000
+								param00036	1.000000
+								param00040	false
+								param00044	6.283185
+								param00048	3.141593
+								param00052	6.283185
+								param00056	false
+								param00057	false
+								param00058	false
+								param00060	0x00000000
+								param00064	0
+								param00068	-1.000000
+								param00072	-1.000000
+								param00076	false
+								param00077	false
+								param00080	100.000000
+								param00084	100.000000
+								param00088	100.000000
+								param00092	0.900000
+								param00096	1.000000
+								param00100	1.000000
+								param00104	1.000000
+								param00108	0.700000
+								param00112	0.500000
+								param00116	0.100000
+								param00120	0x00000000
+							}
+							LocomotionAnimationNew
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"C_PLAYER\RUN"
+								param00028	0.000000
+								param00032	0.303333
+								param00036	0.303333
+								param00040	0x2330163D
+								param00044	0x2330163D
+							}
+							LocomotionEvent
+							{
+								param00024	"P_Run"
+								param00028	1.000000
+								param00032	1
+								param00036	"P_Run"
+								param00040	1.000000
+								param00044	1
+							}
+						}
+					}
+				}
+			}
+		}
+		Bank Long
+		{
+			ConditionGroup
+			{
+				ActionNodeRequest
+				{
+					param00001	0x00000000
+				}
+			}
+			Bank GoToSpecial
+			{
+				ConditionGroup
+				{
+				}
+				Node GoToSpecial
+				{
+					ConditionGroup
+					{
+					}
+					Tracks
+					{
+						Execute
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00032	"../../../Special/SpecialActions/Grapples/Dash"
+						}
+					}
+				}
+			}
+		}
+		Node RunningAttacks
+		{
+			ConditionGroup
+			{
+				ActionNodeRequest
+				{
+					param00001	0x00000000
+				}
+			}
+			Tracks
+			{
+				Execute
+				{
+					param00008	false
+					param00012	0x00000000
+					param00016	-1.000000
+					param00032	"../../../Actions/Offense/RunningAttacks/RunningAttacksDirect"
+				}
+			}
+		}
+	}
+	Bank Defense
+	{
+		ConditionGroup
+		{
+		}
+	}
+	Bank CombatTaunt
+	{
+		ConditionGroup
+		{
+			ActionNodeRequest
+			{
+				param00001	0x00000000
+			}
+		}
+		Node CombatTaunt
+		{
+			ConditionGroup
+			{
+			}
+			Tracks
+			{
+				Animation
+				{
+					param00008	true
+					param00012	0x0000003F
+					param00016	-1.000000
+					param00024	h"G_JOHNNY\TAUNT"
+					param00032	0
+					param00036	0
+					param00040	0x00000000
+					param00044	-1.000000
+					param00048	1.000000
+					param00052	-1.000000
+					param00056	-1.000000
+					param00060	false
+					param00061	false
+				}
+				SpeechTrack
+				{
+					param00008	false
+					param00012	0x00000000
+					param00024	233
+					param00028	true
+					param00032	22
+					param00036	4
+					param00040	0x00000000
+					param00044	1.500000
+					param00048	false
+					param00052	666.666016
+					param00056	666.666016
+					param00060	666.666016
+					param00064	false
+				}
+			}
+		}
+	}
+	Bank Cinematic
+	{
+		ConditionGroup
+		{
+			False
+			{
+				param00001	0x00000000
+			}
+		}
+		Bank ThroatGrab
+		{
+			ConditionGroup
+			{
+			}
+			Node Dash
+			{
+				ConditionGroup
+				{
+				}
+				Tracks
+				{
+					SetTargetAsGrappleTarget
+					{
+						param00008	true
+						param00012	0x00000000
+						param00024	true
+						param00025	false
+						param00026	false
+						param00036	"./ThroatGrab/ThroatGrab_Gv"
+						param00052	"./ThroatGrab/ThroatGrab_Rcv"
+					}
+					Execute
+					{
+						param00008	false
+						param00012	0x00000000
+						param00016	-1.000000
+						param00032	"../../../Offense/Special/SpecialActions/ExecuteNodes/DashLoco"
+					}
+					SetPedFlags
+					{
+						param00008	false
+						param00012	0x00000000
+						param00024	true
+						param00028	13
+					}
+					SetPedFlags
+					{
+						param00008	false
+						param00012	0x000080BF
+						param00024	false
+						param00028	13
+					}
+					Target
+					{
+						param00008	false
+						param00012	0x00000000
+						param00016	-1.000000
+						param00024	0x00000000
+						param00028	0.166667
+						param00032	1.570796
+						param00036	-1.000000
+						param00040	360.000000
+						param00044	10000.000000
+						param00048	true
+						param00049	true
+						param00050	false
+						param00051	false
+						param00052	false
+						param00053	true
+						param00054	true
+						param00055	true
+					}
+				}
+				Bank ThroatGrab
+				{
+					ConditionGroup
+					{
+					}
+					Node ThroatGrab_Gv
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_GRAPPLER\JOH_GRAP_1_ACT"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	-1.000000
+								param00056	-1.000000
+								param00060	true
+								param00061	false
+							}
+							SpeechTrack
+							{
+								param00008	false
+								param00012	0x00000000
+								param00024	233
+								param00028	true
+								param00032	31
+								param00036	4
+								param00040	0x00000000
+								param00044	1.500000
+								param00048	false
+								param00052	666.666016
+								param00056	666.666016
+								param00060	666.666016
+								param00064	false
+							}
+							JointDriver
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"MOTIONCONTROLLERS\JOH_G"
+								param00032	0x00000000
+								param00036	0x00000000
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	-1.000000
+								param00056	0x000080BF
+								param00088	0
+								param00092	"Root"
+								param00096	0x01000000
+								param00100	"Root"
+								param00104	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x7D77773F
+								param00024	1.000000
+								param00028	"Leg_Swing"
+								param00032	2
+								param00036	false
+								param00037	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xCDCC8C3F
+								param00024	1.000000
+								param00028	"PunchHeavy01"
+								param00032	2
+								param00036	false
+								param00037	false
+							}
+						}
+					}
+					Node ThroatGrab_Rcv
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_GRAPPLER\JOH_GRAP_1_VIC"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	-1.000000
+								param00056	-1.000000
+								param00060	false
+								param00061	false
+							}
+							Execute
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"../../../../../../../../HitTree/Standing/Base/DropWeapon"
+							}
+							Sequence
+							{
+								param00008	false
+								param00032	"../../../../Jimmy/BellyUp"
+							}
+							Damage
+							{
+								param00008	false
+								param00012	0xD3DDDD3E
+								param00016	-1.000000
+								param00024	5.000000
+								param00028	-1.000000
+								param00032	-1
+							}
+							Damage
+							{
+								param00008	false
+								param00012	0xF2EE8E3F
+								param00016	-1.000000
+								param00024	15.000000
+								param00028	-1.000000
+								param00032	-1
+							}
+							Damage
+							{
+								param00008	false
+								param00012	0xBFBB9B3F
+								param00016	-1.000000
+								param00024	5.000000
+								param00028	-1.000000
+								param00032	-1
+							}
+							DamageHandle
+							{
+								param00024	1.000000
+								param00028	true
+								param00029	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x1F858B3F
+								param00024	1.000000
+								param00028	"Swing"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xCDCC8C3F
+								param00024	1.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x9A99993F
+								param00024	1.000000
+								param00028	"Bodyfall"
+								param00032	2
+								param00036	false
+								param00037	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x9A99993F
+								param00024	1.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	false
+							}
+							Execute
+							{
+								param00008	false
+								param00012	0x9A99993F
+								param00016	-1.000000
+								param00032	"../../../../../../../../HitTree/SFX/HeavyHits"
+							}
+						}
+					}
+				}
+			}
+		}
+		Bank KickDown
+		{
+			ConditionGroup
+			{
+			}
+			Node Shin
+			{
+				ConditionGroup
+				{
+				}
+				Tracks
+				{
+					Animation
+					{
+						param00008	true
+						param00012	0x00000000
+						param00016	-1.000000
+						param00024	h"G_JOHNNY\PUNCH_2"
+						param00032	0
+						param00036	0
+						param00040	0x00000000
+						param00044	-1.000000
+						param00048	1.000000
+						param00052	0.133333
+						param00056	-1.000000
+						param00060	false
+						param00061	false
+					}
+					Opportunity
+					{
+						param00008	false
+						param00012	0x00000000
+						param00016	-1.000000
+						param00032	"./HeavyAttacks/RoundHouseKick_L"
+						param00040	0.566667
+						param00044	0x1711113F
+						param00048	false
+						param00052	0x00000000
+						param00056	0x00000000
+						param00060	0x00000000
+					}
+					Collision
+					{
+						param00008	false
+						param00012	0x00000000
+						param00016	-1.000000
+						param00024	0.166667
+						param00028	0.300000
+						param00032	"PunchLite01"
+						param00036	1
+						param00044	"HEADCROSS"
+						param00048	5.000000
+						param00052	5.000000
+						param00056	-1.000000
+						param00060	0x00000000
+						param00064	-1.000000
+						param00068	0.200000
+						param00072	0x00000000
+						param00076	0x00000000
+						param00080	20.000000
+						param00084	0x00000000
+						param00088	false
+						param00089	true
+						param00092	0.500000
+						param00528	30
+						param00532	true
+						param00533	false
+						param00534	false
+						param00535	false
+						param00536	false
+						param00537	false
+					}
+					Target
+					{
+						param00008	false
+						param00012	0x00000000
+						param00016	-1.000000
+						param00024	0x00000000
+						param00028	0.166667
+						param00032	1.570796
+						param00036	-1.000000
+						param00040	360.000000
+						param00044	-1.000000
+						param00048	true
+						param00049	true
+						param00050	false
+						param00051	false
+						param00052	false
+						param00053	true
+						param00054	true
+						param00055	true
+					}
+				}
+				Bank HeavyAttacks
+				{
+					ConditionGroup
+					{
+					}
+					Node RoundHouseKick_L
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	h"G_JOHNNY\PUNCH_3"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-1.000000
+								param00048	1.000000
+								param00052	0.133333
+								param00056	-1.000000
+								param00060	false
+								param00061	false
+							}
+							Opportunity
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00032	"./AxeKicks"
+								param00040	0.800000
+								param00044	0xCDCC4C3F
+								param00048	false
+								param00052	0x00000000
+								param00056	0x00000000
+								param00060	0x00000000
+							}
+							Collision
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0.166667
+								param00028	0.366667
+								param00032	"PunchLite01"
+								param00036	1
+								param00044	"WTRPIPESWING"
+								param00048	5.000000
+								param00052	10.000000
+								param00056	-1.000000
+								param00060	0x00000000
+								param00064	-1.000000
+								param00068	0.500000
+								param00072	0x00000000
+								param00076	0x00000000
+								param00080	20.000000
+								param00084	0x00000000
+								param00088	false
+								param00089	true
+								param00092	0.500000
+								param00528	22
+								param00532	true
+								param00533	false
+								param00534	false
+								param00535	false
+								param00536	false
+								param00537	false
+							}
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x00000000
+								param00028	0.166667
+								param00032	1.570796
+								param00036	-1.000000
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+						}
+						Bank AxeKicks
+						{
+							ConditionGroup
+							{
+							}
+							Node AxeKick_R
+							{
+								ConditionGroup
+								{
+								}
+								Tracks
+								{
+									Animation
+									{
+										param00008	true
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	h"G_JOHNNY\BOOTKICK"
+										param00032	0
+										param00036	0
+										param00040	0x00000000
+										param00044	-1.000000
+										param00048	1.000000
+										param00052	0.133333
+										param00056	-1.000000
+										param00060	false
+										param00061	false
+									}
+									Collision
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0.533333
+										param00028	0.700000
+										param00032	"KickHeavy"
+										param00036	1
+										param00044	"HEADWEAPONHARD"
+										param00048	5.000000
+										param00052	5.000000
+										param00056	-1.000000
+										param00060	0xB0AA2A3F
+										param00064	-1.000000
+										param00068	-1.000000
+										param00072	0x00000000
+										param00076	0x00000000
+										param00080	20.000000
+										param00084	0x00000000
+										param00088	false
+										param00089	true
+										param00092	0.500000
+										param00528	8
+										param00532	true
+										param00533	false
+										param00534	false
+										param00535	false
+										param00536	false
+										param00537	false
+									}
+									Target
+									{
+										param00008	false
+										param00012	0x00000000
+										param00016	-1.000000
+										param00024	0x00000000
+										param00028	0.166667
+										param00032	1.570796
+										param00036	0.733333
+										param00040	360.000000
+										param00044	-1.000000
+										param00048	true
+										param00049	true
+										param00050	false
+										param00051	false
+										param00052	false
+										param00053	true
+										param00054	true
+										param00055	true
+									}
+									Opportunity
+									{
+										param00008	false
+										param00012	0x4A44443F
+										param00016	-1.000000
+										param00032	"./AxeKickFollowup"
+										param00040	-1.000000
+										param00044	0x00000000
+										param00048	false
+										param00052	0x00000000
+										param00056	0x00000000
+										param00060	0x00000000
+									}
+								}
+								Node AxeKickFollowup
+								{
+									ConditionGroup
+									{
+										TargetPlaying
+										{
+											param00001	0x00000000
+											param00002	h"HitTree"
+											param00003	1
+										}
+									}
+									Tracks
+									{
+										Animation
+										{
+											param00008	true
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	h"G_JOHNNY\BOOTKICK"
+											param00032	0
+											param00036	0
+											param00040	0x4A44443F
+											param00044	-1.000000
+											param00048	1.000000
+											param00052	0.133333
+											param00056	-1.000000
+											param00060	false
+											param00061	false
+										}
+										Collision
+										{
+											param00008	false
+											param00012	0x00000000
+											param00016	-1.000000
+											param00024	0.000000
+											param00028	-1.000000
+											param00036	1
+											param00048	5.000000
+											param00052	15.000000
+											param00056	-1.000000
+											param00060	0x00000000
+											param00064	-1.000000
+											param00068	-1.000000
+											param00072	0x00000000
+											param00076	0x00000000
+											param00080	20.000000
+											param00084	0x00000000
+											param00088	false
+											param00089	true
+											param00092	0.500000
+											param00104	"./Spit/AxeKick_Grap_GV"
+											param00120	"./Spit/AxeKick_Grap_RCV"
+											param00528	8
+											param00532	true
+											param00533	true
+											param00534	false
+											param00535	false
+											param00536	false
+											param00537	false
+										}
+									}
+									Bank Spit
+									{
+										ConditionGroup
+										{
+										}
+										Node AxeKick_Grap_GV
+										{
+											ConditionGroup
+											{
+											}
+											Tracks
+											{
+												Animation
+												{
+													param00008	true
+													param00012	0x00000000
+													param00016	-1.000000
+													param00024	h"G_JOHNNY\GRAP_AXEKICK_GV"
+													param00032	0
+													param00036	0
+													param00040	0xC1AA2A3E
+													param00044	-1.000000
+													param00048	1.000000
+													param00052	0.133333
+													param00056	-1.000000
+													param00060	false
+													param00061	false
+												}
+												SpeechTrack
+												{
+													param00008	false
+													param00012	0x00000000
+													param00024	233
+													param00028	true
+													param00032	22
+													param00036	4
+													param00040	0x00000000
+													param00044	1.500000
+													param00048	false
+													param00052	666.666016
+													param00056	666.666016
+													param00060	666.666016
+													param00064	false
+												}
+												JointDriver
+												{
+													param00008	true
+													param00012	0x00000000
+													param00016	-1.000000
+													param00024	h"MOTIONCONTROLLERS\JGAK"
+													param00032	0x00000000
+													param00036	0x00000000
+													param00040	0xC1AA2A3E
+													param00044	-1.000000
+													param00048	1.000000
+													param00052	0.066667
+													param00056	0x000080BF
+													param00088	0
+													param00092	"ROOT"
+													param00096	0x01000000
+													param00100	"ROOT"
+													param00104	false
+												}
+												AttachedEffect
+												{
+													param00008	false
+													param00012	1.933333
+													param00016	-1.000000
+													param00024	"Spit"
+													param00028	"Mouth"
+													param00032	-1
+												}
+												PlayOnTarget
+												{
+													param00008	false
+													param00012	0x00000000
+													param00032	"../AxeKick_Grap_RCV"
+													param00040	false
+													param00041	true
+												}
+												SoundFX
+												{
+													param00008	false
+													param00012	0xCDCC4C3F
+													param00024	1.000000
+													param00028	"HeadFootSquish"
+													param00032	2
+													param00036	false
+													param00037	false
+												}
+												SoundFX
+												{
+													param00008	false
+													param00012	0xCDCC8C3F
+													param00024	1.000000
+													param00028	"HeadFootSquish"
+													param00032	2
+													param00036	false
+													param00037	false
+												}
+												SoundFX
+												{
+													param00008	false
+													param00012	0xF2EEAE3F
+													param00024	1.000000
+													param00028	"HeadFootSquish"
+													param00032	2
+													param00036	false
+													param00037	false
+												}
+												SoundFX
+												{
+													param00008	false
+													param00012	0xDBDDDD3F
+													param00024	1.000000
+													param00028	"HeadFootSquish"
+													param00032	2
+													param00036	false
+													param00037	false
+												}
+												SoundFX
+												{
+													param00008	false
+													param00012	0x7577F73F
+													param00024	1.000000
+													param00028	"Spit"
+													param00032	2
+													param00036	false
+													param00037	false
+												}
+												SoundFX
+												{
+													param00008	false
+													param00012	0xCDCC2C40
+													param00024	1.000000
+													param00028	"HeadCrunch"
+													param00032	2
+													param00036	false
+													param00037	false
+												}
+											}
+										}
+										Node AxeKick_Grap_RCV
+										{
+											ConditionGroup
+											{
+											}
+											Tracks
+											{
+												Animation
+												{
+													param00008	true
+													param00012	0x00000000
+													param00016	-1.000000
+													param00024	h"G_JOHNNY\GRAP_AXEKICK_RCV"
+													param00032	0
+													param00036	0
+													param00040	0xC1AA2A3E
+													param00044	-1.000000
+													param00048	1.000000
+													param00052	0.133333
+													param00056	-1.000000
+													param00060	false
+													param00061	false
+												}
+												Sequence
+												{
+													param00008	false
+													param00032	"../../../../../../../../../Jimmy/BellyDown"
+												}
+												Damage
+												{
+													param00008	false
+													param00012	0x00000000
+													param00016	-1.000000
+													param00024	20.000000
+													param00028	-1.000000
+													param00032	-1
+												}
+												DamageHandle
+												{
+													param00024	1.000000
+													param00028	false
+													param00029	true
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		Bank Jimmy
+		{
+			ConditionGroup
+			{
+			}
+			Bank BellyUp
+			{
+				ConditionGroup
+				{
+				}
+				Node On_Ground
+				{
+					ConditionGroup
+					{
+					}
+					Tracks
+					{
+						Animation
+						{
+							param00008	true
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	h"C_PLAYER\GROUND_HURT_IDLE"
+							param00032	2
+							param00036	0
+							param00040	0x00000000
+							param00044	-1.000000
+							param00048	1.000000
+							param00052	0.166667
+							param00056	0.066667
+							param00060	true
+							param00061	false
+						}
+						Target
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0x55550542
+							param00028	0.166667
+							param00032	1.570796
+							param00036	33.366665
+							param00040	360.000000
+							param00044	-1.000000
+							param00048	true
+							param00049	true
+							param00050	false
+							param00051	false
+							param00052	false
+							param00053	true
+							param00054	true
+							param00055	true
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	false
+							param00028	12
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	false
+							param00028	13
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	34
+						}
+						DisableFightTokens
+						{
+							param00008	true
+							param00012	0x00000000
+							param00024	-1.000000
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	36
+						}
+						SoundFX
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	1.000000
+							param00028	"GROANER"
+							param00032	2
+							param00036	false
+							param00037	true
+						}
+					}
+				}
+				Bank BellyUpGetUp
+				{
+					ConditionGroup
+					{
+					}
+					Node BellyUpGetUpGetUp
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-0.033333
+								param00024	h"C_PLAYER\GETUP"
+								param00032	0
+								param00036	0
+								param00040	0xCDCCCC3D
+								param00044	-0.033333
+								param00048	1.450000
+								param00052	-0.033333
+								param00056	-0.033333
+								param00060	false
+								param00061	false
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x00000000
+								param00024	1.000000
+								param00028	"Body_Getup"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x9A99193F
+								param00024	1.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x00000000
+								param00024	true
+								param00028	13
+							}
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0xE9EE6E3F
+								param00028	0.166667
+								param00032	1.570796
+								param00036	1.200000
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	34
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	56
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	13
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0xC7BBBB3E
+								param00024	false
+								param00028	36
+							}
+						}
+					}
+				}
+			}
+			Bank BellyDown
+			{
+				ConditionGroup
+				{
+				}
+				Node On_Ground
+				{
+					ConditionGroup
+					{
+					}
+					Tracks
+					{
+						Animation
+						{
+							param00008	true
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	h"C_PLAYER\GROUND_ONBELLY"
+							param00032	2
+							param00036	0
+							param00040	0x00000000
+							param00044	-1.000000
+							param00048	0.800000
+							param00052	0.133333
+							param00056	0.000000
+							param00060	true
+							param00061	false
+						}
+						Target
+						{
+							param00008	false
+							param00012	0x00000000
+							param00016	-1.000000
+							param00024	0x55550542
+							param00028	0.166667
+							param00032	1.570796
+							param00036	33.366665
+							param00040	360.000000
+							param00044	-1.000000
+							param00048	true
+							param00049	true
+							param00050	false
+							param00051	false
+							param00052	false
+							param00053	true
+							param00054	true
+							param00055	true
+						}
+						DisableFightTokens
+						{
+							param00008	true
+							param00012	0x00000000
+							param00024	-1.000000
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	false
+							param00028	12
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	false
+							param00028	13
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	34
+						}
+						SetPedFlags
+						{
+							param00008	false
+							param00012	0x00000000
+							param00024	true
+							param00028	36
+						}
+					}
+				}
+				Bank BellyDownGetUp
+				{
+					ConditionGroup
+					{
+					}
+					Node BellyDownGetUp
+					{
+						ConditionGroup
+						{
+						}
+						Tracks
+						{
+							Animation
+							{
+								param00008	true
+								param00012	0x00000000
+								param00016	-0.033333
+								param00024	h"C_PLAYER\GETUP_ONBELLY"
+								param00032	0
+								param00036	0
+								param00040	0x00000000
+								param00044	-0.033333
+								param00048	1.250000
+								param00052	0.100000
+								param00056	-0.033333
+								param00060	false
+								param00061	false
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	13
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0xF7735A3E
+								param00024	1.000000
+								param00028	"Body_Getup"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x8FC2F53E
+								param00024	1.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SoundFX
+							{
+								param00008	false
+								param00012	0x27F9453F
+								param00024	1.000000
+								param00028	"Scuff"
+								param00032	1
+								param00036	false
+								param00037	true
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x00000000
+								param00024	true
+								param00028	13
+							}
+							Target
+							{
+								param00008	false
+								param00012	0x00000000
+								param00016	-1.000000
+								param00024	0x4A44443F
+								param00028	0.166667
+								param00032	1.570796
+								param00036	0.866667
+								param00040	360.000000
+								param00044	-1.000000
+								param00048	true
+								param00049	true
+								param00050	false
+								param00051	false
+								param00052	false
+								param00053	true
+								param00054	true
+								param00055	true
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	34
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x000080BF
+								param00024	false
+								param00028	56
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0x00000000
+								param00024	true
+								param00028	36
+							}
+							SetPedFlags
+							{
+								param00008	false
+								param00012	0xB0AA2A3F
+								param00024	false
+								param00028	36
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
