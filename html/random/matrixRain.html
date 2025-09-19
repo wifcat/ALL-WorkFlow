@@ -1,0 +1,200 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: cyan;
+      perspective: 1000px;
+    }
+
+    #matrixRain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.15;
+      filter: blur(0px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      z-index: 1;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #88f7ff;
+      font-weight: 300;
+      z-index: 1;
+    }
+
+    .cube-container {
+      width: 220px;
+      height: 220px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.2s ease-out;
+      animation: spin 10s infinite linear;
+      z-index: 1;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 16px;
+      background: rgba(0, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.05);
+      display: flex;
+      color: cyan;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: none;
+      padding: 10px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      overflow: hidden;
+      line-height: 1.4;
+      font-family: monospace;
+    }
+
+    .front  { transform: translateZ(110px); }
+    .back   { transform: rotateY(180deg) translateZ(110px); }
+    .right  { transform: rotateY(90deg) translateZ(110px); }
+    .left   { transform: rotateY(-90deg) translateZ(110px); }
+    .top    { transform: rotateX(90deg) translateZ(110px); }
+    .bottom { transform: rotateX(-90deg) translateZ(110px); }
+
+    @keyframes spin {
+      0%   { transform: rotateX(0) rotateY(0); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid cyan;
+      color: cyan;
+      font-size: 1rem;
+      border-radius: 8px;
+      backdrop-filter: blur(5px);
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      z-index: 1;
+    }
+
+    .btn:hover {
+      background: rgba(0, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+  </style> 
+</head>
+<body>
+
+<canvas id="matrixRain"></canvas>
+<center>
+<h1>:(</h1>
+<p>You got the wrong site of the trailer today 0xb0007f8</p><br><br>
+</center>
+<div class="cube-container" id="cube">
+  <div class="face front"></div>
+  <div class="face back"></div>
+  <div class="face right"></div>
+  <div class="face left"></div>
+  <div class="face top"></div>
+  <div class="face bottom"></div>
+</div>
+
+<br><br><br>
+<a class="btn" href="/">Back to Home</a>
+
+<script>
+  // Cube movement
+  const cube = document.getElementById('cube');
+  let auto = true;
+
+  document.addEventListener('mousemove', (e) => {
+    auto = false;
+    const x = e.clientX / window.innerWidth - 0.5;
+    const y = e.clientY / window.innerHeight - 0.5;
+    const rotateY = x * 360;
+    const rotateX = -y * 360;
+    cube.style.animation = 'none';
+    cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  let timer;
+  document.addEventListener('mousemove', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      auto = true;
+      cube.style.animation = 'spin 10s infinite linear';
+    }, 3000);
+  });
+
+  // Matrix Rain Effect
+  const canvas = document.getElementById('matrixRain');
+  const ctx = canvas.getContext('2d');
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const letters = "<アァイ7ィウヴ0x8エェオ1カサシスセソタ4チツナニヌネノハヒフ31ヘホマミムメモラリルレロワ2ヲン";
+  const fontSize = 16;
+  const columns = canvas.width / fontSize;
+ const drops = Array.from({ length: Math.floor(columns) }, () => Math.random() * canvas.height / fontSize);
+
+  function drawMatrix() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#00ffcc";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const char = letters[Math.floor(Math.random() * letters.length)];
+      ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.985) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setInterval(drawMatrix, 75); // slower the matrix
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+</body>
+</html>
