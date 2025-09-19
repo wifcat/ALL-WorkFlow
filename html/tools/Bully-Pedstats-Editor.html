@@ -1,0 +1,157 @@
+<!--
+Pedstats editor for bully [do not edit without my perm, hehe]
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedstats editor v3</title>
+</head>
+<link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<body class="page-konvert">
+  <style>
+  .modal-dialog {
+      max-width: 700px;
+  }
+
+  .modal-body {
+      max-height: 60vh;
+      overflow-y: auto;
+  }
+
+    body.page-konvert .main-content,
+    body.page-konvert .container {
+      display: block !important;
+      flex: unset !important;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .badge-input {
+    border: 1px solid #ddd;
+    border-left: 6px solid #0084ff; 
+    border-radius: 6px;
+    background: #f1f3f4;
+    color: #555;
+    font-weight: bold;
+    padding: .5rem .75rem;
+  }
+
+    .edited-stat {
+      background-color: #fff3cd !important; 
+    }
+    .edited-input {
+      background-color: #fff3cd !important;
+    }
+
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f5f6f7;
+      color: #333;
+    }
+
+    .card {
+      border-radius: 1.25rem;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+    }
+    select.cell-input {
+      overflow-y: auto;
+      max-height: 200px;
+  }
+
+    .header-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .cell-input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 0.25rem;
+      font-size: 0.95rem;
+    }
+
+    .cell-input:focus {
+      outline: none;
+      background-color: #eaf1f9;
+      border-radius: 0.5rem;
+    }
+
+    .stat-link {
+      display: block;
+      padding: 0.75rem 1rem;
+      background: #fff;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+
+    .stat-link:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body class="page-konvert">
+  <div class="container p-4">
+    <a href="../index.html" class="btn btn-danger btn-sm">Return</a>
+    <div class="card p-4">
+      <div class="header-title">PedStats.dat Editor</div>
+      <div class="row g-3 mb-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <input type="file" class="form-control" id="fileInput" accept=".dat" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <button class="btn btn-outline-secondary w-100" id="openFromServerBtn">Open pedstats.dat from here</button>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <input type="text" class="form-control" id="searchInput" placeholder="Search by PedStat name" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row gap-2">
+          <button class="btn btn-primary w-100" id="downloadBtn">Download File</button>
+          <button class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#draftModal">Last Draft</button>
+          <button id="addStatBtn" class="btn btn-success w-100 mt-2">+ Add New Stat</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="statList"></div>
+    <div id="statAccordion" style="display:none"></div>
+
+    <!-- Draft Modal -->
+    <div class="modal fade" id="draftModal" tabindex="-1" aria-labelledby="draftModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header">
+            <h5 class="modal-title" id="draftModalLabel">Last Project Drafts</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="draftList">
+            <p class="text-muted">No drafts available.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Stat Modal -->
+<div class="modal fade" id="statModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content rounded-4" id="statModalContent">
+      <!-- Dynamic content by renderAccordion() -->
+    </div>
+  </div>
+</div>
+<script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<script src="desc.js"></script>
