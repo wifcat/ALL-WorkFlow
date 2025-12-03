@@ -36,7 +36,7 @@ gDiveRoll_TOUCHPAD = function()
     while true do
         Wait(0)
         local opponent = PedGetTargetPed(gPlayer)
-        if IsButtonPressed(15,0) and PedIsValid(gPlayer) then 
+        if IsButtonPressed(15,0) and PedIsValid(opponent) then 
             if ROLL_LEFT then
                 PedSetTaskNode(gPlayer, "/Global/AI/VehicleAvoidance/DiveLeftSequence/FaceDiveEntity/DiveLeft", "Act/AI/AI.act")
                 repeat
