@@ -1,0 +1,12 @@
+SpineControl
+{
+	master	false
+	timeBegin	0.000000
+	timeEnd	-1.000000
+	butesName	h"Melee"
+	trackCamera	false
+	trackFacingIntention	true
+	counterRotateArms	false
+	limitTargets    false
+	targetJoint	0
+}
