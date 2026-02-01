@@ -1,10 +1,3 @@
---[[
-## A simple Strafing framework and mod for Bully Scripting, not written in oop, modular, and all that ##
-## Compile using my Lua Compiler Apk ##
-## Enjoy the custom strafing system :) ##
-## Don't forget to load anim group ##
-]]
-
 STRAFE_STANCE = {}
 STRAFE_STANCE.FRAMEWORK = {}
 STRAFE_STANCE.STRAFING = {}
@@ -71,6 +64,13 @@ Strafes.PlayerStrafing = function()
         PedFaceXYZ(gPlayer, L_X, L_Y, L_Z)
     elseif (not PedIsValid(Framework.STRAFE_FLAGS.GET_TARGET()) or Framework.ReturnButtons()) and (PedIsPlaying(gPlayer, "CombatBasic", true) or PedIsPlaying(gPlayer, "StrafeIdle", true)) then
         PedSetActionNode(gPlayer, "/Global/Player", "Act/Player.act")
+    end
+    if PedIsPlaying(gPlayer, "/Global/HitTree/Standing/Melee", true) and not PedIsHit(gPlayer, true) and PedIsValid(Framework.STRAFE_FLAGS.GET_TARGET2()) and PedIsInCombat(Framework.STRAFE_FLAGS.GET_TARGET2()) and not PedIsDead(Framework.STRAFE_FLAGS.GET_TARGET2()) and not PedMePlaying(gPlayer, "Front_Float") and not PedMePlaying(gPlayer, "On_Ground") and not PedMePlaying(gPlayer, "OnGroundBounce") and not PedMePlaying(gPlayer, "DownOnGround") and not PedMePlaying(gPlayer, "GroundAndWallHits") and not PedMePlaying(gPlayer, "KOReactions") and not PedMePlaying(gPlayer, "PlayerOnGround") and not PedMePlaying(gPlayer, "BellyUp") and not PedMePlaying(gPlayer, "BellyDown") then
+	    PedSetDamageGivenMultiplier(Framework.STRAFE_FLAGS.GET_TARGET(), 2, 0)
+	    PedSetActionNode(gPlayer, "/Global/Actions/Defence/Block/Block/BlockHits/HitsLight", "Globals/GlobalActions.act")
+    end
+    if PedIsHit(gPlayer, true) and PedIsValid(Framework.STRAFE_FLAGS.GET_TARGET()) and PedIsInCombat(Framework.STRAFE_FLAGS.GET_TARGET()) and PedGetWhoHitMeLast() ~= gPlayer then
+	    return PedSetActionNode(gPlayer, "/Global/Actions/Defence/Block/Block/BlockHits/HitsLight", "Globals/GlobalActions.act")
     end
 end
 
