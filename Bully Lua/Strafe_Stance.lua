@@ -2,8 +2,8 @@ STRAFE_STANCE = {}
 STRAFE_STANCE.FRAMEWORK = {}
 STRAFE_STANCE.STRAFING = {}
 
-Framework = gData.FRAMEWORK
-Strafes = gData.STRAFING
+Framework = STRAFE_STANCE.FRAMEWORK
+Strafes = STRAFE_STANCE.STRAFING
 
 Framework.PlayerMove = function()
     SENS = 0.08
