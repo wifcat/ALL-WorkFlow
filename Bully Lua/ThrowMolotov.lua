@@ -1,8 +1,6 @@
 --[[ 
 
-Subscribe - www.youtube.com/@aqxua 
-Incase u want it :)
-
+unfinished
 ]]
 
 
